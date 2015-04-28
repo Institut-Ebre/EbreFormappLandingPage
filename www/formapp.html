@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="starter">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
+
+      <!-- Bootstrap Core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Custom Fonts -->
+      <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
 
     <!-- compiled css output -->
@@ -18,14 +25,38 @@
     <!-- your app's js -->
     <script src="js/app.js"></script>
   </head>
-  <body ng-app="starter">
+  <body ng-controller="MyCtrl">
     <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
-      </ion-header-bar>
       <ion-content>
-          CONTENT HERE
+          <ion-header-bar class="bar-positive">
+              <h1 class="title">Ionic Blank Starter</h1>
+          </ion-header-bar>
+          dsaasdasd
+          <h1>CONTENT HERE</h1>
+          <h2>SUBCONTENT HERE</h2>
           <a href="index.html"">Link to landing page</a>
+
+          <p>sdaasdasdasdasd asd asddasd asd asd asdasd asd asda sdas dasd asd asd asd asd asd asd asd asd asd asd asd asd
+          asd asd asd asd asd asd asd asd asdas asdas das dasd asd asd asd asdasrfasersdf sdfsad fasdrwgdfh asd asd asd
+          das asd asdfas dfsad erg dssf saf asdf sd</p>
+          <p>
+          sdaasdasdasdasd asd asddasd asd asd asdasd asd asda sdas dasd asd asd asd asd asd asd asd asd asd asd asd asd
+          asd asd asd asd asd asd asd asd asdas asdas das dasd asd asd asd asdasrfasersdf sdfsad fasdrwgdfh asd asd asd
+          das asd asdfas dfsad erg dssf saf asdf sd</p>
+
+          <div class="list">
+
+              <a ng-repeat="item in items"
+                 href="#/{{item.id}}"
+                 class="item item-thumbnail-left">
+
+                  <img ng-src="{{ item.image }}">
+                  <h2>{{ item.album }}</h2>
+                  <h4>{{ item.artist }}</h4>
+              </a>
+
+          </div>
+
       </ion-content>
     </ion-pane>
   </body>
